@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+*/
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    float: right;
+    width: 40%;
+    height: 70px;
+    margin: 0px;
+    padding: 8px;
+    background-color: #90EE90;
+    display: inline;
+}
+
+.box p {
+    float: right;
+}
+
+.box1 {
+    float: left;
+    width: 60%;
+    height: 70px;
+    margin: 0px;
+    padding: 8px;
+    background-color:#90EE90;
+    display: inline;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: auto;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    max-width: 80%;
+    background-color: antiquewhite;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 5px;
+    box-shadow: 0 0 10px 2px;
+    ;
+}
+
+
+
+.btn {
+    font: .07rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 06px 5px;
+    width: 15rem;
+    text-align: center;
+    border: 2px lightblue;
+    margin-bottom: 10px;
+    color: black;
+    background-color: rgb(134, 134, 236);
+    outline: none;
+}
+
+.btn-grid {
+    display: grid;
+    justify-content: center;
+}
+
+.btn:hover {
+    border: 2px;
+    color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+    color: black;
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+#counter {
+    width: 100%;
+    justify-content: right;
+    align-items: flex-end;
+}
+.A {
+    margin: 20px;
+    padding :20px;
+}
+#correct {
+    color:green;
+    font:bolder;
+        font-size: 20px;
+}
+
+#incorrect {
+    color:red;
+    font:bolder;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+   .container {
+       background-color: tomato;
+      }
+}
+@media screen and (max-width: 450px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+   .container {
+       background-color: skyblue;
+      }
+    /* Change the header background */
+.section{
+    flex-direction: column;
+}    
+.box , .box1 {
+    float:left;
+    background-color: brown;
+    font-size: 70%;
+}
+}

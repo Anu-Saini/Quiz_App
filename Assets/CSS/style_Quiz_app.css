@@ -1,0 +1,101 @@
+*,*::after , *::before {
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;    
+       
+    }
+    
+    :root{
+            background-color: antiquewhite;
+    
+    }
+    body {
+            background-color: antiquewhite;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+                }
+    
+    
+    
+    .box {
+            justify-content: right;
+            width: 100%;
+            height:70px;
+            margin: 0px;
+            padding: 8px;
+            background-color:lightgreen;
+            }
+    
+    .box p{
+                    float: right;
+            }
+    .container {
+            display: flex ;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            margin-top: auto;
+            margin: 0 auto;
+            width:800px;
+            height: 400px;
+            max-width:70%;
+             background-color:antiquewhite;
+            padding: 20px 5px;
+             box-shadow:  0 0 10px 2px;               ;
+            }
+    .flex-column {
+            display: flex;
+            flex-direction: column; 
+            width: 70%;  
+    }
+            
+    .btn-grid {
+             display:grid;
+             grid-template-columns: repeat(2,auto);
+             gap:10px;
+            margin: 20px 0;
+            }
+    
+    .btn {
+             --hue:var(--hue-neutral);
+             background-color: hsl(var(--hue),100%,50%);
+            border: 1px solid hsl(var(--hue),100%,30%);
+             border-radius: 10px;
+            padding: 10px 5px;
+            color:black;
+             outline: none;
+            }
+    
+    
+    .btn:hover {
+            border: 2px;
+    
+            color: black;
+            }
+    .btn.correct{
+             --hue:var(--hue-correct);
+             color: black;
+            }
+    .btn.wrong {
+             --hue:var(--hue-wrong);
+            }
+    .start-btn, .next-btn {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding:  10px 20px;
+    
+            }
+    .controls{
+            display: block;
+            justify-content:center; 
+            align-items: center;
+            }
+    .hide {
+          display: none;
+          }
+    #counter {
+           width:100%;
+            justify-content: right;
+            align-items:flex-end;
+    }
+    

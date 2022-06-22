@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Assets/CSS/style.css" rel="stylesheet">
+
+    <title>Quiz Me</title>
+
+</head>
+
+<body class="wrong">
+    <section>
+        <div class="box1">
+            <p> High Score : <span id="highscore"></span> </p>
+        </div>
+        <div class="box">
+            <p> Score : <span id="score"></span> <br> Time Left : <span id="counter"></span> Secs</p>
+        </div>
+    </section>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div id="status" class="status">
+            <span id="correct">Right</span>
+            <span id="incorrect">Wrong</span>
+        </div>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn"> Start</button>
+            <button id="next-btn" class="snext-btn btn hide"> Next</button>
+        </div>
+        <div id="score-status" class="score-status">
+            <span id="final-score"></span>
+            <input type="text" placeholder="initials" id="initial">
+            <button id="submit-btn" click="showScore()" class="btn"> submit</button>
+        </div>
+        <div id="high-score-status" class="high-score-status">
+            <span id="high-score"></span>
+            <div class="A">
+                <a class="btn" id="clear">Clear highscore</a>
+                <a class="btn" href="index.html"> Start Quiz</a>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./Assets/JS/script.js"></script>
+</body>
+
+</html>
